@@ -47,7 +47,7 @@ services:
             DB_USERNAME: laravel
             DB_PASSWORD: laravel
         volumes:
-            - .:/app
+            - ./:/app
 
 
     php-cli:
@@ -59,7 +59,7 @@ services:
             APP_DEBUG: 1
             DB_HOST: 127.0.0.1
         volumes:
-            - .:/app
+            - ./:/app
 
 networks:
     traefik-public:
